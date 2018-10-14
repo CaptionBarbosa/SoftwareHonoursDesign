@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class='inline' id="LineGraph">
+      <button onclick="lineToggle()">Show Line Graph</button>
+      <button onclick="sunburstToggle()">Show Building Graph</button>
+      <button onclick="lineToggle()">Show Projection Graph</button>
+    </div>
+
+    <div id="content" style="height: 2000px" style="width: 2000px"></div>
+
+    <script>
+        function lineToggle()
+        {
+            document.getElementById("content").innerHTML='<object type="text/html" data="sliderGraph.html" height="100%" width="100%" ></object>';
+        }
+    </script>
+    <script>
+        function sunburstToggle()
+        {
+            document.getElementById("content").innerHTML='<object type="text/html" data="sunburstGraph.html" height="100%" width="100%" ></object>';
+        }
+    </script>
+</body>
+</html>
