@@ -6,6 +6,7 @@
     <script src="http://mbostock.github.com/d3/d3.v2.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+      <script src="lineGraph.js"></script>
 
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />
     <style>
@@ -47,6 +48,7 @@
     /* implementation heavily influenced by http://bl.ocks.org/1166403 */
 
     // define dimensions of graph
+    testData();
     var m = [80, 80, 80, 80]; // margins
     var w = 1000 - m[1] - m[3]; // width
     var h = 400 - m[0] - m[2]; // height

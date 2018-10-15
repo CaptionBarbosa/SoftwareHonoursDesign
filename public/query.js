@@ -18,7 +18,8 @@ function queryDatabase(start, end, frequency, metric) {
         data: JSON.stringify(payload),
         async: true,
         success: function(resp) {
-            console.log(resp[0][0].dps[0]);
+            FillGraphData(resp[0][0].dps[0]);
+            //console.log(resp[0][0].dps[0]);
             //respObj._names
             //graphLoaded();
             //if (graph == "line") setTimeout(renderLineGraph.bind(null, resp), 500);
