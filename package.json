@@ -1,0 +1,30 @@
+{
+  "name": "softwarehonoursdesign",
+  "version": "1.0.0",
+  "description": "<a href=\"https://d3js.org\"><img src=\"https://d3js.org/logo.svg\" align=\"left\" hspace=\"10\" vspace=\"6\"></a>",
+  "main": "node.js",
+  "dependencies": {
+    "browserify": "^16.2.3",
+    "csv-stringify": "^4.3.1",
+    "express": "^4.16.4",
+    "json-stringify": "^1.0.0",
+    "mquery": "^3.2.0",
+    "opentsdb": "^0.5.7",
+    "opentsdb-client": "^0.0.4",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaptionBarbosa/SoftwareHonoursDesign.git"
+  },
+  "author": "Alessandro Barbosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaptionBarbosa/SoftwareHonoursDesign/issues"
+  },
+  "homepage": "https://github.com/CaptionBarbosa/SoftwareHonoursDesign#readme"
+}
