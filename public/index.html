@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <title>Title</title>
     <link rel="shortcut icon" href="">
-    <script src="/cdn/d3.min.js"></script>
+    <script src="/cdn/d3.v2.js"></script>
+    <script src="/cdn/data.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
     <script src="/cdn/query.js"></script>
+
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />
+    <style>
+        /* tell the SVG path to be a thin blue line without any area fill */
+        path {
+            stroke: steelblue;
+            stroke-width: 1;
+            fill: none;
+        }
+
+        .axis {
+            shape-rendering: crispEdges;
+        }
+
+        .x.axis line {
+            stroke: lightgrey;
+        }
+
+        .x.axis .minor {
+            stroke-opacity: .5;
+        }
+
+        .x.axis path {
+            display: none;
+        }
+
+        .y.axis line, .y.axis path {
+            fill: none;
+            stroke: #000;
+        }
+    </style>
 </head>
 <body>
     <script src="/cdn/lineGraph.js"></script>
@@ -17,6 +49,9 @@
       <button onclick="sunburstToggle()">Show Building Graph</button>
       <button onclick="lineToggle()">Show Projection Graph</button>
     </div>
-    <div id="content" style="height: 2000px" style="width: 2000px"></div>
+    <div id="contentLineGraph" style="height: 2000px" style="width: 2000px" style="display: none">
+        <div id="graph" class="aGraph"></div>
+        <div id="slider-range" style="width: 50%; margin-left:10%; margin-right:10%"></div>
+    </div>
 </body>
 </html>

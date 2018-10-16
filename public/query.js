@@ -1,6 +1,6 @@
 var startDate = '2016/04/01 00:00';
 var endDate = Date.now();
-var frequency = '6h-avg';
+var frequency = '1d-avg';
 var graph = "";
 
 function queryDatabase(start, end, frequency, metric) {
@@ -18,8 +18,9 @@ function queryDatabase(start, end, frequency, metric) {
         data: JSON.stringify(payload),
         async: true,
         success: function(resp) {
-            FillGraphData(resp[0][0].dps[0]);
-            //console.log(resp[0][0].dps[0]);
+            FillGraphData(resp);
+            AllowGraphDisplay();
+            console.log(resp[0][0].dps[0]);
             //respObj._names
             //graphLoaded();
             //if (graph == "line") setTimeout(renderLineGraph.bind(null, resp), 500);
