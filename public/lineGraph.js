@@ -1,3 +1,7 @@
+//Logic for Line Graph initially sourced from Pranita Ramakrishna - "Simple Line Graph Manipulated Using a Slider"
+//Source: http://bl.ocks.org/pranitar/01305d9ad0eba73dbf80
+//Accessed: 19th October 2018
+//Edited for current usage and implementation by Alessandro Barbosa
 var dataGathered = [];
 var dps = [];
 var metric = '';
